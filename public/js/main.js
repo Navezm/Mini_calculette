@@ -126,15 +126,15 @@ input4[1].addEventListener("click", function(e){
 for (let i = 0; i < btnChiffre.length; i++) {
     btnChiffre[i].addEventListener("click", function(){
         if(i == 9){
-            if(input4_1 == true){
+            if(input4_1){
                 input4[0].value = input4[0].value + "0";
-            } else if(input4_2 == true){
+            } else if(input4_2){
                 input4[1].value = input4[1].value + "0";
             };
         } else {
-            if(input4_1 == true){
+            if(input4_1){
                 input4[0].value = input4[0].value + (i + 1);
-            } else if(input4_2 == true){
+            } else if(input4_2){
                 input4[1].value = input4[1].value + (i + 1);
             };
         };
